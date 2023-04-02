@@ -21,7 +21,7 @@ void PrintArray (int [,] arr)
     }
 }
 
-void Sum (int[,] arr)
+void Sum (int [,] arr)
 {
     Console.WriteLine("<_______________________________________________>");
     Console.WriteLine("Стреднее арифметическое каждого столбца: ");
