@@ -1,4 +1,4 @@
-﻿void InputArray(double [,] arr)
+﻿void InputArray(int [,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
@@ -9,7 +9,7 @@
     }
 }
 
-void PrintArray (double [,] arr)
+void PrintArray (int [,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
@@ -21,7 +21,7 @@ void PrintArray (double [,] arr)
     }
 }
 
-void Sum (double[,] arr)
+void Sum (int[,] arr)
 {
     Console.WriteLine("<_______________________________________________>");
     Console.WriteLine("Стреднее арифметическое каждого столбца: ");
@@ -39,7 +39,7 @@ void Sum (double[,] arr)
 Console.Clear();
 Console.WriteLine("Введите размерность массива (строка=>столбец) через пробел: ");
 int [] size = Console.ReadLine()!.Split().Select(x => int.Parse(x)).ToArray();
-double [,] Array = new double [size[0], size[1]];
+int [,] Array = new int [size[0], size[1]];
 InputArray(Array);
 PrintArray(Array);
 Sum(Array);
